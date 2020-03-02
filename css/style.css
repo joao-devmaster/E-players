@@ -92,6 +92,16 @@ header img{
 .red{
     color: red;
 }
+.banner{
+    width: 1005;
+    height: 400px;
+    background-image: url("../img/meta_mundo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
     
 
