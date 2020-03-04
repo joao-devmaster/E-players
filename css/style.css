@@ -4,10 +4,12 @@
     --purple: #7278c3;
     --blue: #00a8dc;
 }
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: var(--background);
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
@@ -18,6 +20,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 .gradient{
     background: rgba(252,30,137,1);
     background: -moz-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
@@ -28,31 +31,38 @@ a{
     background: linear-gradient(to right, rgbba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1e89', endColorstr='#7277c3', GradientType=1 );
 }
+
 .container{
     width: 80%;
     max-width: 1200px;
     margin: 0px auto;
 }
+
 header .container{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
 }
+
 header ul{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     flex-flow: wrap;
 }
+
 header nav{
     width: 60%;
 }
+
 header a{
     text-transform: uppercase;
 }
+
 header img{
     margin-right: 100px;
 }
+
 .partidas{
     width: 100%;
     text-align: center;
@@ -66,29 +76,35 @@ header img{
     background: linear-gradient(to bottom, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422c5a', endColorstr='#100f11', GradientType=0 );
 }
+
 .partidas .container{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-flow: wrap;
 }
+
 .partidas{
     padding: 0 0 10px 0;
 }
+
 .partida img{
     width: 35px;
     padding: 0 10px;
 }
+
 .partidas h2{
     font-size: 14px;
     text-align: start;
     padding: 10px 0;
 }
+
 .partida div{
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
+
 .red{
     color: red;
 }
@@ -102,32 +118,76 @@ header img{
     justify-content: center;
     align-items: center;
 }
+
 .ligas{
 display: flex;
 justify-content: space-between;
+align-items: center;
+padding: 30px 0 ;
+
 
 }
 .ligas img{
     height: 140px;
 }
+
 .ligas h4{
     font-size: 45px;
     text-transform: uppercase;
-}
+} 
+
 .ligas h3{
     font-size: 90px;
     text-transform: uppercase;
     line-height: 40px;
 }
+
 .ligas div{
     margin-bottom: 35px;
 }
-.sobre{
-    background-image: url("../img/Teams/T6.jpg");
+
+.sobre_fundo{
+    background-image: url("../img/Teams/T6.jpg"); 
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 200px;
+    min-height: 500px;
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+   
+}
+
+.sobre_fundo_filtro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sobre{
+    position: relative;
+    display: flex;
+    
+}
+
+.sobre img{
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    left: 100px;
+    width: 100%;
+    max-width: 40%;
+    max-width: 35%;
+}
+.texto_sobre{
+    width: 40%;
+    margin-right: 100px;
+    text-align: end;
+    text-align: right;
+    text-shadow: 0 0 3px #000;
+}
+.texto_sobre h2{
+margin-bottom: 2em;
 }
