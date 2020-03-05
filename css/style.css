@@ -343,6 +343,88 @@ footer form input{
     padding: 0.58em 2em;
     cursor: pointer;
 }
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+}
+
+/*inicia o cadastro*/
+
+.banner_cadastro{
+    width: 100%;
+    height: 273px;
+    background-image: url(../img/topo-cadastro.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;  
+}
+
+.banner_cadastro h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    
+}
+
+/*formulario*/
+
+.form_cadastro{
+    width: 100%;
+    max-width: 400px;
+    margin: 10em auto;
+    box-shadow: 0px 10px 10px #000, 0px -3px 10px #7278c3;
+    padding: 1.5em;
+    border-radius: 5px;
+
+}
+
+.campo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1em;
+    
+}
+
+.campo label{
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"],
+.campo input[type="email"],
+input[type="date"],
+select{
+    width: 50%;
+    background-color: #1e1c21;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #7278c3;
+    color: white;
+
+}
+.campo input :focus{
+    background-color: #2f2f2f;
+}
+.campo fieldset{
+    border: none;
+}
+
+.campo fieldset label{
+    margin: 2em 1em 2em 0 ;
+}
+.termos{
+    justify-content: unset;
+    align-items: center;
+
+}
+ .termos input{
+     margin-right: 0.5em;
+ }
+
+ .form_cadastro .campo:nth-child(10) button{
+    margin: auto;
+}
 
 
 
