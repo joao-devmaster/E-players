@@ -431,6 +431,10 @@ select{
     margin: auto;
 }
 
+header .fa-bars{
+    display: none;
+}
+
 /* inicio resposividade */
 
 /* 800px */
@@ -502,8 +506,50 @@ select{
 
 
 
-
+/* mobile*/
 /* inicio responsividade 460px */
+
+@media(max-width:460px){
+ 
+ header .fa-bars{
+     color: var(--purple);
+     font-size: 3em;
+     display: block;
+ }
+
+ header .container div{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ header .container div a{
+     margin-left: 7em;
+
+ }
+
+ #menu{
+     position: absolute;
+     top: 5.5em;
+     width: 100%;
+     background-color: var(--purple);
+     display: none;
+ }
+
+ #menu ul{
+     flex-direction: column;
+     height: 300px;
+     margin-left: 1em;
+ }
+
+ #menu a{
+     display: block;
+     padding: 0.5em 0;
+     /* background-color: lightblue;*/
+ }
+
+
+ 
+}
 
 
 

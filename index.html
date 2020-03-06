@@ -14,10 +14,16 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" title="acessar a página inicial do site">
-                <img src="img/Logo.svg" alt="logo do site e-pleyers">
-            </a>
-            <nav>
+            <div>
+
+                <a href="#" onclick="botaomenu()"> 
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html" title="acessar a página inicial do site">
+                    <img src="img/Logo.svg" alt="logo do site e-pleyers">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="acessar página inicial">início</a></li>
                     <li><a href="#sobre" title="acessar sessão sobre o projeto">sobre</a></li>
@@ -50,54 +56,54 @@
                     </div>
                 </div>
                 <!--final em andamento-->
-                
+
                 <div class="proximas_partidas">
-                <div class="partida">
-                    <h2>Proximas Partidas </h2>
-                    <div>
-                        <strong>FLA</strong>
-                        <img src="./img/FLA.png" alt="emblema do flamengo">
-                        <i>VS</i>
-                        <img src="./img/SK.png" alt="emblema do sk">
-                        <strong>SK</strong>
+                    <div class="partida">
+                        <h2>Proximas Partidas </h2>
+                        <div>
+                            <strong>FLA</strong>
+                            <img src="./img/FLA.png" alt="emblema do flamengo">
+                            <i>VS</i>
+                            <img src="./img/SK.png" alt="emblema do sk">
+                            <strong>SK</strong>
+                        </div>
+                        12:30H
                     </div>
-                    12:30H
-                </div>
 
-                <div class="partida">
-                    <div>
-                        <strong>FLA</strong>
-                        <img src="./img/FLA.png" alt="emblema do flamengo">
-                        <i>VS</i>
-                        <img src="./img/SK.png" alt="emblema do sk">
-                        <strong>SK</strong>
+                    <div class="partida">
+                        <div>
+                            <strong>FLA</strong>
+                            <img src="./img/FLA.png" alt="emblema do flamengo">
+                            <i>VS</i>
+                            <img src="./img/SK.png" alt="emblema do sk">
+                            <strong>SK</strong>
+                        </div>
+                        12:30H
                     </div>
-                    12:30H
-                </div>
 
-                <div class="partida">
-                    <div>
-                        <strong>FLA</strong>
-                        <img src="./img/FLA.png" alt="emblema do flamengo">
-                        <i>VS</i>
-                        <img src="./img/SK.png" alt="emblema do sk">
-                        <strong>SK</strong>
+                    <div class="partida">
+                        <div>
+                            <strong>FLA</strong>
+                            <img src="./img/FLA.png" alt="emblema do flamengo">
+                            <i>VS</i>
+                            <img src="./img/SK.png" alt="emblema do sk">
+                            <strong>SK</strong>
+                        </div>
+                        12:30H
                     </div>
-                    12:30H
-                </div>
 
-                <div class="partida">
-                    <div>
-                        <strong>FLA</strong>
-                        <img src="./img/FLA.png" alt="emblema do flamengo">
-                        <i>VS</i>
-                        <img src="./img/SK.png" alt="emblema do sk">
-                        <strong>SK</strong>
+                    <div class="partida">
+                        <div>
+                            <strong>FLA</strong>
+                            <img src="./img/FLA.png" alt="emblema do flamengo">
+                            <i>VS</i>
+                            <img src="./img/SK.png" alt="emblema do sk">
+                            <strong>SK</strong>
+                        </div>
+                        12:30H
                     </div>
-                    12:30H
                 </div>
-            </div>
-            <!--final proximas partidas-->
+                <!--final proximas partidas-->
 
             </div>
 
@@ -330,9 +336,9 @@
 
             </div>
 
-                <form action="" method="get">
-                    <label for="email">Entre para a lista vip</label>
-                    <div>
+            <form action="" method="get">
+                <label for="email">Entre para a lista vip</label>
+                <div>
 
                     <input type="email" id="email" name="email_usuario">
                     <button type="submit" class="gradient btn">enviar</button>
@@ -342,14 +348,31 @@
 
 
 
-                </form>
+            </form>
 
 
         </div>
         <!--fim do conteiner-->
-        <p><p>© COPYRIGHT - Todos os direitos resevardos - SENAI de Informática E-Sports</p></p>
+        <p>
+            <p>© COPYRIGHT - Todos os direitos resevardos - SENAI de Informática E-Sports</p>
+        </p>
 
     </footer>
+    <script>
+
+        function botaomenu(){
+
+            var m = document.getElementById("menu");
+            console.log('ok')
+            if(m.style.display == "block"){
+                m.style.display = "none";
+
+            } 
+            else{
+                m.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
 
